@@ -26,6 +26,9 @@ class AViewController: UIViewController {
         let message = String(pickerView.selectedRow(inComponent: 0))+"~"+String(pickerView.selectedRow(inComponent: 1))+"~"+String(pickerView.selectedRow(inComponent: 2))
         print(message)
     }
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.present(BViewController(), animated: true, completion: nil)
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
