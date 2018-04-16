@@ -109,6 +109,7 @@ extension ViewController:LViewDelegate{
     
     func toNext(lview: LView) {
         print("~~~~\(LView())")
+        self.present(AViewController(), animated: true, completion: nil)
     }
     
     
